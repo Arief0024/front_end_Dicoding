@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sekawan Orginizer</title>
+
+    <!-- My Own Styles -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#sejarah">Galeri</a>
+          </li>
+          <li>
+            <a href="#geografis">Service Cabang</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="slider-container">
+        <div class="slide">
+          <img src="assets/image/wed1.jpg" alt="wedding 1" />
+          <div class="slide-content">
+            <h1>Sekawan Organizer</h1>
+            <p class="slide-content-paragraf">
+              Menggenggam Impian, Mewujudkan Acara Tak Terlupakan.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assets/image/wed2.jpg" alt="wedding 2" />
+        </div>
+        <div class="slide">
+          <img src="assets/image/wed3.jpg" alt="wedding 3" />
+        </div>
+      </div>
+      <button class="prev" onclick="prevSlide()">❮</button>
+      <button class="next" onclick="nextSlide()">❯</button>
+    </header>
+
+    <main>
+      <!-- Konten artikel -->
+      <div id="content">
+        <article id="sejarah" class="card">
+          <h2 class="service">Galeri</h2>
+
+          <div class="card-row">
+            <div class="card_samping">
+              <img src="assets/image/we1.jpg" alt="Gambar 1" />
+              <h3><a href="#">Foto wedding</a></h3>
+              <p>
+                Foto Wedding yang dilaksanakan pada acara pernikahan Yusril &
+                Kamila
+              </p>
+            </div>
+
+            <div class="card_samping">
+              <img src="assets/image/w.jpg" alt="Gambar 2" />
+              <h3><a href="#">Outdoor Wedding</a></h3>
+              <p>
+                Acara pernikahan yang dilaksanakan secara outdoor atau di ruang
+                terbuka di daerah Kota Bogor.
+              </p>
+            </div>
+
+            <div class="card_samping">
+              <img src="assets/image/ind.jpg" alt="Gambar 3" />
+              <h3><a href="#">Ngunduh Mantu</a></h3>
+              <p>
+                Ngunduh mantu adalah serangkaian acara yang dilaksanakan oleh
+                sekawan organizer.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article id="geografis" class="card">
+          <h2 class="service">Service Cabang</h2>
+
+          <section>
+            <h3>Cabang Jakarta</h3>
+            <img
+              src="assets/image/jakarta.jpg"
+              alt="farm house"
+              class="featured-image"
+            />
+            <ul>
+              <li>Alamat Kantor : Jl. Tb simatupang No.12A</li>
+              <li>Jam Operasional : 08.00 - 21.00</li>
+              <li>Kontak : +62813-2479-9012</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Cabang Bogor</h3>
+            <img
+              src="assets/image/bogor.jpg"
+              alt="bosscha"
+              class="featured-image"
+            />
+            <ul>
+              <li>Alamat Kantor : Jl.Raya Jakarta-Bogor</li>
+              <li>Jam Operasional : 08.00 - 21.00</li>
+              <li>Kontak : +62896-1897-4453</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Cabang Depok</h3>
+            <img
+              src="assets/image/depok.jpeg"
+              alt="bosscha"
+              class="featured-image"
+            />
+            <ul>
+              <li>Alamat Kantor : Jl.Margonda Raya</li>
+              <li>Jam Operasional : 08.00 - 20.00</li>
+              <li>Kontak : +62895-4473-8674</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+
+      <!-- Konten samping -->
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Sekawan Tenda</h2>
+            <p>Sekawan Wedding Organizer</p>
+            <figure>
+              <img src="assets/image/se1.png" />
+              <figcaption></figcaption>
+            </figure>
+          </header>
+
+          <section>
+            <h3>Informasi Lainnya</h3>
+
+            <table>
+              <tr>
+                <th>Kantor Pusat</th>
+                <td>Bogor</td>
+              </tr>
+              <tr>
+                <th>Pemilik</th>
+                <td>Bp.Ramli Syamsudin</td>
+              </tr>
+              <tr>
+                <th>Cabang</th>
+                <td>Jakarta, Depok, Bogor</td>
+              </tr>
+              <tr>
+                <th>Kontak Pusat</th>
+                <td>+62897-1349-8130</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

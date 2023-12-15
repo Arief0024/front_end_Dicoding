@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+}
+
+h2,
+h3 {
+  color: #ffd700;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #132043;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: 18px;
+
+  font-weight: 400;
+  text-decoration: none;
+
+  color: black;
+}
+
+nav a:hover {
+  font-weight: bold;
+  background-color: #000000;
+  color: #ffd700;
+  text-decoration: none;
+  border-radius: 900px;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 1rem;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #ebf3e8;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+nav img {
+  height: 70px;
+  order: 2; /* Menggeser gambar ke kanan */
+}
+
+main {
+  padding: 20px;
+
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+
+  padding-left: 20px;
+}
+
+header {
+  display: inline;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* slider js */
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
+}
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffd700;
+}
+
+.slide-content-paragraf {
+  color: #ffffff;
+}
+
+.service {
+  text-align: center;
+  color: #000000;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Mengatur card agar diletakkan di bagian atas (flex-start) */
+  flex-wrap: wrap; /* Mengizinkan wrapping ke baris baru jika diperlukan */
+}
+
+.card_samping {
+  flex: 0 0 200px; /* Mengatur lebar card */
+  margin: 10px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #333;
+}
+h3 a:hover {
+  color: #ffd700;
+}
+p {
+  margin: 10px 0;
+}
